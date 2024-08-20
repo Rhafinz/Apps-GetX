@@ -1,5 +1,8 @@
 import 'package:get/get.dart';
+import 'package:myapp/app/modules/biodata/views/output_view.dart';
 
+import '../modules/biodata/bindings/biodata_binding.dart';
+import '../modules/biodata/views/biodata_view.dart';
 import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -22,6 +25,15 @@ class AppPages {
       name: _Paths.COUNTER,
       page: () => const CounterView(),
       binding: CounterBinding(),
+    ),
+    GetPage(
+      name: _Paths.BIODATA,
+      page: () => const BiodataView(),
+      binding: BiodataBinding(),
+    ),
+    GetPage(
+      name: _Paths.OUTPUT,
+      page: () => OutputView(),
     ),
   ];
 }
