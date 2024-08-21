@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_state_manager/src/simple/list_notifier.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -41,7 +42,7 @@ class RegisterController extends GetxController {
   }
 
   @override
-  void onClose() {
+  void dispose() {
     emailController.dispose();
     passwordController.dispose();
     super.onClose();
