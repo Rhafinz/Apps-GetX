@@ -22,26 +22,26 @@ class HomeView extends GetView<HomeController> {
               style: TextStyle(fontSize: 20),
             ),
           ),
-          ElevatedButton(
-            onPressed: () {
-              Get.toNamed('/counter');
-            },
-            child: Text("Pindah Ke Halaman Counter"),
-          ),
-          SizedBox(height: 10),
-          ElevatedButton(
-            onPressed: () {
-              Get.toNamed('/biodata');
-            },
-            child: Text("Pindah Ke Halaman Biodata"),
-          ),
-          SizedBox(height: 10),
-          ElevatedButton(
-            onPressed: () {
-              Get.toNamed('/profile');
-            },
-            child: Text("Profile"),
-          )
+          // ElevatedButton(
+          //   onPressed: () {
+          //     Get.toNamed('/counter');
+          //   },
+          //   child: Text("Pindah Ke Halaman Counter"),
+          // ),
+          // SizedBox(height: 10),
+          // ElevatedButton(
+          //   onPressed: () {
+          //     Get.toNamed('/biodata');
+          //   },
+          //   child: Text("Pindah Ke Halaman Biodata"),
+          // ),
+          // SizedBox(height: 10),
+          // ElevatedButton(
+          //   onPressed: () {
+          //     Get.toNamed('/profile');
+          //   },
+          //   child: Text("Profile"),
+          // )
         ],
       ),
     );
