@@ -11,6 +11,8 @@ dependencies:
   get: 4.6.6
   flutter: 
     sdk: flutter
+  get_storage: ^2.1.1
+  http: ^1.2.2
 
 dev_dependencies: 
   flutter_lints: ^3.0.0
