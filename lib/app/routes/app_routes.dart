@@ -6,6 +6,9 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const COUNTER = _Paths.COUNTER;
   static const BIODATA = _Paths.BIODATA;
+  static const REGISTER = _Paths.REGISTER;
+  static const LOGIN = _Paths.LOGIN;
+  static const PROFILE = _Paths.PROFILE;
 }
 
 abstract class _Paths {
@@ -14,4 +17,7 @@ abstract class _Paths {
   static const COUNTER = '/counter';
   static const BIODATA = '/biodata';
   static const OUTPUT = '/output';
+  static const REGISTER = '/register';
+  static const LOGIN = '/login';
+  static const PROFILE = '/profile';
 }
