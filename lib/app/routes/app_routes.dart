@@ -14,6 +14,14 @@ abstract class Routes {
   static const CREATE_KATEGORI = _Paths.CREATE_KATEGORI;
   static const EDIT_KATEGORI = _Paths.EDIT_KATEGORI;
   static const SHOW_KATEGORI = _Paths.SHOW_KATEGORI;
+  static const TAG = _Paths.TAG;
+  static const CREATE_TAG = _Paths.CREATE_TAG;
+  static const EDIT_TAG = _Paths.EDIT_TAG;
+  static const SHOW_TAG = _Paths.SHOW_TAG;
+  static const USER = _Paths.USER;
+  static const CREATE_USER = _Paths.CREATE_USER;
+  static const EDIT_USER = _Paths.EDIT_USER;
+  static const SHOW_USER = _Paths.SHOW_USER;
 }
 
 abstract class _Paths {
@@ -30,4 +38,12 @@ abstract class _Paths {
   static const CREATE_KATEGORI = '/kategori/create';
   static const EDIT_KATEGORI = '/kategori/edit';
   static const SHOW_KATEGORI = '/kategori/show';
+  static const TAG = '/tag';
+  static const CREATE_TAG = '/tag/create';
+  static const EDIT_TAG = '/tag/edit';
+  static const SHOW_TAG = '/tag/show';
+  static const USER = '/user';
+  static const CREATE_USER = '/user/create';
+  static const EDIT_USER = '/user/edit';
+  static const SHOW_USER = '/user/show';
 }

@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:myapp/app/modules/tag/views/show_tag._view.dart';
 
 import '../middlewares/auth_middleware.dart';
 import '../modules/biodata/bindings/biodata_binding.dart';
@@ -21,6 +22,15 @@ import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
+import '../modules/tag/bindings/tag_binding.dart';
+import '../modules/tag/views/create_tag_view.dart';
+import '../modules/tag/views/edit_tag_view.dart';
+import '../modules/tag/views/tag_view.dart';
+import '../modules/user/bindings/user_binding.dart';
+import '../modules/user/views/create_user_view.dart';
+import '../modules/user/views/edit_user_view.dart';
+import '../modules/user/views/show_user_view.dart';
+import '../modules/user/views/user_view.dart';
 
 part 'app_routes.dart';
 
@@ -75,27 +85,75 @@ class AppPages {
       middlewares: [AuthMiddleware()],
     ),
     GetPage(
-      name: _Paths.KATEGORI,
+      name: Routes.KATEGORI,
       page: () => KategoriView(),
       binding: KategoriBinding(),
       middlewares: [AuthMiddleware()],
     ),
     GetPage(
-      name: _Paths.CREATE_KATEGORI,
+      name: Routes.CREATE_KATEGORI,
       page: () => CreateKategoriView(),
       binding: KategoriBinding(),
     ),
     GetPage(
-      name: _Paths.EDIT_KATEGORI,
+      name: Routes.EDIT_KATEGORI,
       page: () => EditKategoriView(),
       binding: KategoriBinding(),
       middlewares: [AuthMiddleware()],
     ),
     GetPage(
-      name: _Paths.SHOW_KATEGORI,
+      name: Routes.SHOW_KATEGORI,
       page: () => ShowKategoriView(),
       binding: KategoriBinding(),
       middlewares: [AuthMiddleware()],
-    ),                    
+    ),
+    GetPage(
+      name: Routes.TAG,
+      page: () => TagView(),
+      binding: TagBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.CREATE_TAG,
+      page: () => CreateTagView(),
+      binding: TagBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.EDIT_TAG,
+      page: () => EditTagView(),
+      binding: TagBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.SHOW_TAG,
+      page: () => ShowTagView(),
+      binding: TagBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.USER,
+      page: () => UserView(),
+      binding: UserBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.CREATE_USER,
+      page: () => CreateUserView(),
+      binding: UserBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.EDIT_USER,
+      page: () => EditUserView(),
+      binding: UserBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
+    GetPage(
+      name: Routes.SHOW_USER,
+      page: () => ShowUserView(),
+      binding: UserBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
   ];
 }
